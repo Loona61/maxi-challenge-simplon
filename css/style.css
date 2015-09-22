@@ -1,9 +1,11 @@
 @font-face {
-font-family: 'Open Sans';
-src: url('open-sans/OpenSans-Regular.ttf');
+	font-family: 'Open Sans';
+	src: url('open-sans/OpenSans-Regular.ttf');
 }
 
-body {
+
+
+html, body {
 	background-image : url( ../images/background.jpg );
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -12,9 +14,14 @@ body {
 	
 	font-family: "Open Sans";
 	
+	height:100%;
 	padding: 0px;
 	margin : 0px;
+}
 
+#page {
+	height:100%;
+	text-align:center;
 }
 
 #overlay {
@@ -38,8 +45,10 @@ body {
 	list-style: none;
 	padding: 0;
 	color: rgba(255, 255, 255, 0.7);
-	font-size: 0.8125em;
-	text-align: center;
+	font-size: 13px;
+	height: 60px;
+	letter-spacing: 1.3px;
+	line-height: 20px;
 }
 
 #navigation ul {
@@ -51,7 +60,7 @@ body {
     display: inline-block;
 }
 
-#navigation a {
+ #navigation a {
     display: block;
 	color: rgba(255, 255, 255, 0.7);
 	text-decoration: none;
@@ -64,5 +73,202 @@ body {
 
 #navigation #actif {
 	color:white;
-	font-weight: 700;
+	font-weight: bold;
+}
+
+#entete{
+	height:100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#titre {
+	display: block;
+	flex-basis: auto;
+	flex-grow: 0;
+	flex-shrink: 0;
+	text-align:center;
+	margin: auto;
+	padding-bottom:58px;
+	position:relative;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 1.6px;
+	color: rgba(255, 255, 255, 0.701961);
+}
+
+h1 {
+	font-family: 'Open Sans';
+	font-size: 68px;
+	font-weight: 300;
+	letter-spacing: 6.8px;
+	line-height: 68px;
+	height: 68px;
+	color: white;
+	margin-bottom: 14.8364px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+h2 {
+	color: rgb(255, 255, 255);
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	height: 26px;
+	letter-spacing: 1.6px;
+	line-height: 26px;
+	margin-bottom: 26px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+#contenu-home {
+	position:relative;
+	border-top-color: rgba(255, 255, 255, 0.2);
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	clear: both;
+	color: rgba(255, 255, 255, 0.701961);
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 1140px;
+	margin: auto;
+	display:flex;
+	text-align:justify;
+}
+
+#text-home{
+	box-sizing: border-box;
+	display: block;
+	flex-basis: 33.3333%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding: 0 20px;
+}
+
+#img-home{
+	box-sizing: border-box;
+	display: block;
+	flex-basis: 33.3333%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding: 0 20px;
+}
+
+ #nimg-home a {
+	text-decoration: none;
+	padding: 0;
+}
+
+#recentpost-home {
+	box-sizing: border-box;
+	display: block;
+	flex-basis: 33.3333%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding: 0 20px;
+}
+
+#recentpost-home ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+#recentpost-home li{
+	display: list-item;
+	margin-bottom: 10px;
+}
+
+ #recentpost-home a {
+	display:block;
+	font-size: 16px;
+	line-height: 26px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	text-align: left;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.701961);
+}
+
+span {
+color: rgb(102, 102, 102);
+display: block;
+font-size: 13px;
+font-style: normal;
+height: 26px;
+letter-spacing: 1.3px;
+line-height: 26px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+text-align: left;
+text-transform: uppercase;
+word-wrap: break-word;
+}
+
+#social {
+	position: relative;
+	border-top-color: rgba(255, 255, 255, 0.2);
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	display: block;
+	height: 80px;
+	margin: auto;
+	padding-bottom: 17px;
+	padding-top: 17px;
+	text-align: center;
+	width: 1140px;
+}
+
+#social ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+#social li {
+	box-sizing: border-box;
+	display: inline-block;
+	height: 25px;
+	line-height: 26px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#social span {
+position:relative;
+color:white;
+}
+
+footer {
+position: relative;
+padding: 10px;
+color: white;
+font-size: 13px;
+letter-spacing: 1.3px;
+line-height: 20px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
 }
