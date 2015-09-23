@@ -112,7 +112,7 @@ h1 {
 	margin-top: 0px;
 }
 
-h2 {
+ h2 {
 	color: rgb(255, 255, 255);
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -353,64 +353,76 @@ a {
 }
 
 input {
-   width:300px;      
+	width:100%;
+	margin-bottom: 13px ;   
 }
-
-textarea {    
-    height: 200px;  
-    width: 80%;  
-}
-
-
- input, textarea {
-    margin-bottom: 13px ;
-    }
-
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< page news >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-#news_article{
-	border: 1px solid black;
-}
-
 #News{
+	display: block;
 	margin-top : 5%;
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
 	max-width: 65%;
 	float: left;
 	text-align:left;
 }
 
 #News h1 {
-display: block;
-font-size: 29px;
-font-weight: normal;
-height: 44px;
-line-height: 44px;
-margin-bottom: 14px;
-margin-left: 0px;
-margin-right: 0px;
-margin-top: 0px;
-width: 720px;
-letter-spacing: normal;
+	font-size: 29px;
+	font-weight: normal;
+	line-height: 44px;
+	margin-bottom: 14px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	letter-spacing: normal;
+	height: auto;
 }
 
-aside{
+aside {
 	float: right;
-	max-width: 30%;
+	max-width:32%;
 	margin-top : 5%;
+	text-align:left;
+}
+
+aside h2 {
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1.6px;
+	line-height: 26px;
+	margin-bottom: 26px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 26px;
+	text-transform: uppercase;
+	width: 340px;
+	word-wrap: break-word;
 }
 
 .sources{
 	color: white;
-	margin: 4%;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 26px;
+	margin-top: 10px;
+	word-wrap: break-word;
 }
 
 .citations{
-	margin: 4%;
-	font-size: 20px;
-	opacity: 0.7;
+	border-left-color: rgba(255, 255, 255, 0.2);
+	border-left-style: solid;
+	border-left-width: 4px;
+	color: rgba(255, 255, 255, 0.4);
+	display: block;
+	font-size: 21px;
+	line-height: 34.125px;
+	margin-bottom: 26px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-left: 20px;
+	word-wrap: break-word;
 }
 
 #lignes p{
