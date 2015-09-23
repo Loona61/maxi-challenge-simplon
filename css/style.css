@@ -272,3 +272,43 @@ text-align: center;
 text-decoration: none;
 text-transform: uppercase;
 }
+
+
+.form{
+	position: relative;
+	flex-direction: column;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.textContact{
+	text-align: left;
+	line-height: 0;
+}
+.item{
+	margin-top: 2%;
+	margin-bottom: 0.5%;
+}
+.cellules{
+	background-color: black;
+	opacity: 0.5;
+	border: none;
+	width: 300px;
+	height: 41px;
+}
+textarea{
+	background-color: black;
+	opacity: 0.5;
+	border: none;
+}
+#sub{
+	float: left;
+	width: 113px;
+	height: 40px;
+	background-color: black;
+	color: white;
+	opacity: 0.4;
+	border: none;
+}
+#sub:hover{
+	opacity: 1;
+}
