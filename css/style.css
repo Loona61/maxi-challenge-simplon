@@ -3,7 +3,7 @@ html, body {
 	background-image : url( ../images/background.jpg );
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 50% 50%;
+	background-position: center center;
 	background-attachment: fixed;
 	
 	font-family: "Open Sans";
@@ -349,6 +349,7 @@ a {
 }
 
 input {
+	padding: 10px;
 	width:100%;
 	margin-bottom: 13px ;   
 }
