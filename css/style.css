@@ -322,7 +322,7 @@ footer {
 }
 
 .header_title {
-	padding: 50px;
+	margin: 50px;
 	color: white;    
     font-size: 68px;    
     font-weight: 300;
@@ -351,6 +351,20 @@ footer {
 a {
 	text-decoration:none;
 }
+
+input {
+   width:300px;      
+}
+
+textarea {    
+    height: 200px;  
+    width: 80%;  
+}
+
+
+ input, textarea {
+    margin-bottom: 13px ;
+    }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< page news >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
