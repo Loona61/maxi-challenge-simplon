@@ -45,7 +45,7 @@ html, body {
 	color: rgba(255, 255, 255, 0.7);
 	font-size: 13px;
 	height: 60px;
-	letter-spacing: 1.3px;
+	letter-spacing: 1px;
 	line-height: 20px;
 }
 
@@ -73,6 +73,44 @@ html, body {
 	color:white;
 	font-weight: bold;
 }
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  menu déroulant nav bar  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+#menu ul li {
+    display: inherit;
+}
+
+#menu ul {
+    position: absolute;
+    left: -999em;
+    text-align: left;
+	padding-left:0;
+	z-index:1;
+}
+
+#menu li:hover ul{
+    left: auto;
+	width: 220px;
+	background-color: black;
+}
+
+#menu li:hover a{
+    padding:  15px 20px;
+}
+
+#menu li:hover li .underline{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#fleche{
+	position: absolute;
+	margin-top: -10px;
+	margin-left: 3px;
+	height: 20px;
+	width: 40px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 #entete{
 	height:100%;
@@ -356,7 +394,7 @@ input {
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< page news >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-#News{
+.News{
 	display: block;
 	margin-top : 5%;
 	position: relative;
@@ -365,7 +403,7 @@ input {
 	text-align:left;
 }
 
-#News h1 {
+.News h1 {
 	font-size: 29px;
 	font-weight: normal;
 	line-height: 44px;
@@ -473,6 +511,59 @@ aside h2 {
 	text-align:left;
 	letter-spacing:normal;
 }
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< pages Music sous menu  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.playlist {
+	width: 65%;
+	float: right;
+	text-align: left;
+	margin-top: 5%;
+	line-height: 0;
+}
+
+.pochette_lecteur{
+	float: left;
+	width: 30%;
+}
+
+.chanson{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	display:flex;
+}
+.numero{
+	float:left;
+	width: 10%;
+	margin-left: 30px;
+}
+
+.timer:hover{
+	
+}
+.titre{
+	width: 60%;
+	text-align: left;
+	margin-right: 10px;
+	color: white;
+}
+.timer{
+	margin-left: 140px;
+}
+.achat{
+	border: none;
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	opacity: 0.3;
+	font-size: 18px;
+}
+.achat:hover{
+	opacity: 1;
+}
+#e-com{
+	margin-top: 10%;
+}
+
 
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< page Contact >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/

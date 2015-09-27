@@ -4,6 +4,7 @@
 <head>
         <title>La Musique de JEAN JEAN</title>
         <meta charset="utf-8">
+		<link href='css/normalize.css' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
@@ -13,13 +14,12 @@
 	<div id="overlay"></div>
     <div id="page">
 	
-		<div id ="entete">
 			<nav id ="navigation">
 				<ul id="menu">
-					<li><a href="index.html" id="actif">HOME</a></li>
+					<li><a href="index.html" >HOME</a></li>
 					<li><a href="bio.html">BIO</a></li>
 					<li><a href="photos.html">PHOTOS</a></li>
-					<li><a href="music.html" id="music" >MUSIC</a>
+					<li><a href="music.html" id="actif" id="music" >MUSIC</a>
 						<ul><img src="images/fleche.png" id="fleche"/>
 							<li><a class="underline" href="gravitational.html">Gravitational Pull</a></li>
 							<li ><a class="underline" href="morning.html">Morning Star</a></li>
@@ -31,14 +31,65 @@
 					<li><a href="tour.html">TOUR</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
-			</nav>  
-
-			<div id="titre">
-				<h1>LA MUSIQUE DE JEAN JEAN</h1>
-				MA MUSIQUE C'EST DE LA BONNE !	
-			</div>
+			</nav> 
 			
-		</div>
+			<div id="titre">
+				<h1 class="header_title">Obsidian</h1>
+				<h1 class="sous_titre">RECORDS</h1>
+			</div>
+			<div id="bloc_page">
+				
+				<aside class="pochette_lecteur"><img src="images/album-03.jpg"/>
+				<div id="e-com"><button class="achat">ITUNE</button>
+				<button class="achat">AMAZON</button>
+				<button class="achat">SPOTIFY</button>
+					</div>
+				</aside>
+				<article class="playlist">
+					<h2 class="sous_titre">Gravitational Pull</h2>
+					<p>Release: 2012</p>
+					<div><a  href="#" class="chanson" onmouseover="changer(1);" onmouseout="changer(2);">
+						<p class="numero" id="num">1</p>
+						
+						<p class="titre">Apollo 11</p>
+						<p class="timer">-/--</p>
+					</a>
+					<a class="chanson">
+						<p class="numero">2</p>
+						<p class="titre">Bright Ancient Hightlands</p>
+						<p class="timer">-/--</p>
+					</a>
+					<a class="chanson">
+						<p class="numero">3</p>
+						<p class="titre">Gravitational Pull</p>
+						<p class="timer">-/--</p>
+					</a><a class="chanson">
+						<p class="numero">4</p>
+						<p class="titre">The Man, The Rabbit, and The Buffalo</p>
+						<p class="timer">-/--</p>
+					</a>
+					<a class="chanson">
+						<p class="numero">5</p>
+						<p class="titre">Maria</p>
+						<p class="timer">-/--</p>
+					</a>
+					<a class="chanson">
+						<p class="numero">6</p>
+						<p class="titre">Near Side of the Moon</p>
+						<p class="timer">-/--</p>
+					</a>
+					<a class="chanson">
+						<p class="numero">7</p>
+						<p class="titre">J'aime pas celle là</p>
+						<p class="timer">-/--</p>
+					</a>
+					<a class="chanson">
+						<p class="numero">8</p>
+						<p class="titre">Big Bisous</p>
+						<p class="timer">-/--</p>
+					</a>
+				</article>
+				</div>
 		
         <div id="contenu-home">
 		
@@ -51,7 +102,7 @@
 			
 			<div id="img-home">
 				<h2>MA POCHETTE TROP BELLE</h2>
-				<a href="https://obsidiandemo.wordpress.com/music/viviennes-omitted-line/"><img src="https://obsidiandemo.files.wordpress.com/2012/04/album-03.jpg?w=1000&amp;h=1000" width="340" height="340"></a>
+				<a href="https://obsidiandemo.wordpress.com/music/viviennes-omitted-line/"><img src="images/video-like-a-rose-530x300.jpg" width="340" height="340"></a>
 			</div>
 			
 			<div id="recentpost-home">
@@ -66,7 +117,7 @@
 						<span class="post-date">December 15, 2014</span>
 					</li>
 					<li>
-						<a href="https://obsidiandemo.wordpress.com/2014/12/15/the-reviews-are-rolling-in/">The reviews are rolling&nbsp;in…</a>
+						<a href="https://obsidiandemo.wordpress.com/2014/12/15/the-reviews-are-rolling-in/">The reviews are rolling&nbsp;in...</a>
 						<span class="post-date">December 15, 2014</span>
 					</li>
 				</ul>
@@ -92,6 +143,19 @@
         <footer>
 			<p> DESIGN BY ROBERT, ROGER ET FILS </p>
 		</footer>
+				<script type="text/javascript">
+		function changer(c) {
+			
+			
+    if (c == 1) {
+        document.getElementById("num").innerHTML = ">";
+    }
+    else if(c == 2){
+        document.getElementById("num").innerHTML = 1;
+    }
+ 
+}
+		</script>
         
     </div>
 </body>
