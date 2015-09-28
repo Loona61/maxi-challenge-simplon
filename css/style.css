@@ -847,3 +847,82 @@ thead {
 }
 
 }
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Page Photo gallery-1->>>>>>>>>>>>>>>>>>>>>>*/
+#gallerie-1
+    {
+    margin-top: 5px;
+    margin-bottom: 3px;
+ 
+    display: inline-block;
+    float: left;
+   
+    }
+    
+.img1 {
+ width: 716px;
+height: 505px;
+    
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<gallery-2->>>>>>>>>>>>>>>>>>>>>>*/
+
+#gallerie-2
+{
+    display: flex;
+    flex-direction: column;
+    height: 505px;
+    float: right;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+
+    
+    }
+
+.img2 {
+    height: 250px;
+    width: 380px;
+}
+
+.img3
+{
+height: 253px;
+width: 380px;
+}
+        
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<gallery-3->>>>>>>>>>>>>>>>>>>>>>*/
+
+#gallerie-3
+{
+    display: flex;
+    width: 100%;
+    height: 34.9%;
+    
+}
+#gallerie-2 img
+{
+    margin-top: 3px;
+    
+}
+.img5 , .img8
+{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.img9
+{
+    margin-right: 3px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<gallery-4->>>>>>>>>>>>>>>>>>>>>>*/
+
+
+
+#gallerie-4
+{
+    display: flex;
+    width: 100%;
+    height: 34.9%;
+    margin-top: 3px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<fin de page photo >>>>>>>>>>>>>>>>>>>>>>*/
