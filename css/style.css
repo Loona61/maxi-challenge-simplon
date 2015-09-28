@@ -858,7 +858,7 @@ thead {
 
 #gallerie-1
     {
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 3px;
  
     display: inline-block;
@@ -932,5 +932,6 @@ width: 380px;
     width: 100%;
     height: 210px;
     margin-top: 3px;
+    margin-bottom: 15px;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<fin de page photo >>>>>>>>>>>>>>>>>>>>>>*/
