@@ -39,31 +39,30 @@
 		</div>
 		
 		<div id="bloc_page">
-            <div id="bloc_photo">
-                <div id="gallerie-1">
-                <img class="img1" src="images/gallery-10.jpg">
-            </div>
-            <div id="gallerie-2">
-                <img class="img2" src="images/gallery-09.jpg">
-                <img class="img3" src="images/gallery-08.jpg">
-            </div>
-                 
-                    
-          
-       <div id="gallerie-3">
-            <img class="img4" src="images/gallery-07.jpg">
-            <img class="img5" src="images/gallery-06.jpg">
-            <img class="img6" src="images/gallery-05.jpg">
+            <br>
+            <br>
+            <ul id="gallerie1">
+                <li><a class="fancybox" rel="group" href="images/gallery-10.jpg"><img src="images/gallery-10.jpg"/></a></li>
+            </ul>
+            <ul id="gallerie2">
+            <li><a class="fancybox" rel="group" href="images/gallery-09.jpg"><img src="images/gallery-09.jpg" width="376" height="250"/></a></li>
+            <li><a class="fancybox" rel="group" href="images/gallery-08.jpg"><img src="images/gallery-08.jpg" width="376" height="251"/></a></li>
+            </ul>
+            <ul id="gallerie3">
+              <li><a class="fancybox" rel="group" href="images/gallery-07.jpg"><img src="images/gallery-07.jpg" width="445" height="297"/></a></li> 
+              <li><a class="fancybox" rel="group" href="images/gallery-06.jpg"><img src="images/gallery-06.jpg" width="198" height="297"/></a></li>  
+              <li><a class="fancybox" rel="group" href="images/gallery-05.jpg"><img src="images/gallery-05.jpg" width="445" height="297"/></a></li>
+            </ul>
+             <ul id="gallerie4">
+              <li><a class="fancybox" rel="group" href="images/gallery-04.jpg"><img src="images/gallery-04.jpg" width="314" height="210"/></a></li>
+             <li><a class="fancybox" rel="group" href="images/gallery-03.jpg"><img src="images/gallery-03.jpg" width="315" height="210"/></a></li> 
+             <li><a class="fancybox" rel="group" href="images/gallery-02.jpg"><img src="images/gallery-02.jpg" width="140" height="210"/></a></li> 
+             <li><a class="fancybox" rel="group" href="images/gallery-01.jpg"><img src="images/gallery-01.jpg" width="315" height="210"/></a></li> 
+            </ul>
             
-        </div>
-         <div id="gallerie-4">
-            <img class="img7" src="images/gallery-04.jpg">
-            <img class="img8" src="images/gallery-03.jpg">
-            <img class="img9" src="images/gallery-02.jpg">
-            <img class="img10" src="images/gallery-01.jpg">
             
-        </div>
-            </div>   
+            
+        
 		      </div>
 		
         <div id="contenu-home">
@@ -118,7 +117,20 @@
         <footer>
 			<p> DESIGN BY ROBERT, ROGER ET FILS </p>
 		</footer>
-        
+        <!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
     </div>
 </body>
 </html>

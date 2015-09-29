@@ -847,14 +847,15 @@ thead {
 }
 
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Page Photo gallery-1->>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Page Photo >>>>>>>>>>>>>>>>>>>>>>*/
 #bloc_page
 	{
 		width: 1100px;
         
+        
 	}
 
-#bloc_photo img
+#bloc_page img
     {
      -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
@@ -863,98 +864,52 @@ thead {
           transition: all 1s ease;
 }
  
-#bloc_photo img:hover {
+#bloc_page img:hover {
   -webkit-filter: blur(5px);
     
 }
+#bloc_page ul
+{
+list-style: none;
+}
 
-
-#gallerie-1
-    {
-    margin-top: 50px;
-    margin-bottom: 3px;
- 
-    display: inline-block;
-    float: left;
-   
-    }
-    
-.img1 {
- width: 716px;
+#gallerie1
+{
+width: 716px;
 height: 505px;
-    
+float: left;
+margin-bottom: 3px;
+
 }
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<gallery-2->>>>>>>>>>>>>>>>>>>>>>*/
-
-#gallerie-2
+#gallerie3, #gallerie4
 {
-    display: flex;
-    flex-direction: column;
-    height: 505px;
-    float: right;
-    margin-top: 48px;
-    margin-bottom: 3px;
-    margin-left: 3px;
-
-    
-    }
-
-.img2 {
-    height: 250px;
-    width: 380px;
+display: flex;
+flex-direction: row;
+width: 100%;
+margin-right: 3px;
+padding: 0px;
+ 
 }
-
-.img3
+#gallerie3 img , #gallerie4 img
 {
-height: 253px;
-width: 380px;
-}
-        
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<gallery-3->>>>>>>>>>>>>>>>>>>>>>*/
-
-#gallerie-3
-{
-    display: flex;
-    width: 100%;
-    height: 297px;
-    
-}
-#gallerie-2 img
-{
-    margin-top: 3px;
-    
-}
-.img5 , .img8
-{
-    margin-left: 3px;
-    margin-right: 3px;
-}
-.img9
-{
-    margin-right: 3px;
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<gallery-4->>>>>>>>>>>>>>>>>>>>>>*/
+margin-right: 4px;
 
 
-
-#gallerie-4
-{
-    display: flex;
-    width: 100%;
-    height: 210px;
-    margin-top: 3px;
-    margin-bottom: 50px;
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<fin de page photo >>>>>>>>>>>>>>>>>>>>>>*/
-
+#gallerie4 {
+    margin-top:-25px;
+}
+#gallerie3 {
+margin-top: -25px;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<video  >>>>>>>>>>>>>>>>>>>>>>*/
 
 #bloc_video 
     {
         margin-top: 50px;
         margin-bottom: 50px;
+        border-radius: 25px;
+       
     }
 #text_video 
     {
@@ -966,7 +921,7 @@ width: 380px;
         text-decoration: underline;
     }
 
-
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<fin de page video >>>>>>>>>>>>>>>>>>>>>>*/
 
 
 
