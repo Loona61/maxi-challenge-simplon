@@ -363,7 +363,19 @@ footer {
     letter-spacing: 1.6px;
     line-height: 1;     
     text-transform: uppercase;
+
 }
+
+.titre_non_souligne:hover	{
+	text-decoration: none;
+	color:white;
+}
+
+.titre_non_souligne	{
+	text-decoration: none;
+	color:white;
+}
+
 
 .sous_titre {
 	font-size: 29px;
