@@ -1059,6 +1059,10 @@ margin-top: -25px;
 	cursor: default;
 }
 
+#title {
+	text-align:left;
+}
+
 #time {
 	text-align:right;
 }

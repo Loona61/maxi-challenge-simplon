@@ -26,7 +26,7 @@ function update() {
 	var duration = sound.duration;    // Durée totale
 	var time     = sound.currentTime; // Temps écoulé
 	var fraction = time / duration;
-	var percent  = Math.ceil(fraction * 100);
+	var percent  = fraction * 100;
 
 	var progress = document.querySelector('#timeline');
 		
