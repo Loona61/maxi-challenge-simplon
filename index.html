@@ -4,6 +4,7 @@
 <head>
         <title>La Musique de JEAN JEAN</title>
         <meta charset="utf-8">
+		<link href='css/normalize.css' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
@@ -91,8 +92,68 @@
 		
         <footer>
 			<p> DESIGN BY ROBERT, ROGER ET FILS </p>
-		</footer>
-        
+		</footer>   
     </div>
+		<div id="player">
+			<div id="control">
+				<button id ="prev" type="button" title="Previous Track" onclick="prev()"><span class="fa fa-step-backward"></span></button>
+				<button id ="play" type="button" title="Play" onclick="playSound()"><span id="icon_play" class="fa fa-play"></span></button>
+				<button id ="next" type="button" title="Next Track" onclick="next()"><span class="fa fa-step-forward"></span></button>
+			</div>
+			<img id="player_album" src="./images/album-03.jpg" width="50px" height="50px">
+			<div id="timeline" onclick="clickProgress('audioPlayer', this, event)">
+				<p id="title">Aeolus - She Threw Herself Into the Sea</p>
+				<p id="time">00:00/2:18</p>
+			</div>
+			<div id="control_plus">
+				
+				<button id="volume" type="button" title="Sound"><div id="rien"><input type="range" id="slider" value="100"/></div><span class="fa fa-volume-up"></span></button>
+				<button id="playlist" type="button" title="Playlist" onclick="playlist()"><span id="icon_playlist" class="fa fa-align-justify"></span></button>
+			</div>
+			<div id="list">
+				<table>
+				<tr onclick="playMix(0)">
+					<td>1</td>
+					<td>She Threw Herself into the Sea</td> 
+					<td>Aeolus</td>
+					<td>2:18</td>
+				</tr>
+				<tr onclick="playMix(1)">
+					<td>2</td>
+					<td>What the Thunder Said</td> 
+					<td>Aeolus</td>
+					<td>3:20</td>
+				</tr>
+				<tr onclick="playMix(2)">
+					<td>3</td>
+					<td>Province of All Mankind</td> 
+					<td>Aeolus</td>
+					<td>2:01</td>
+				</tr>
+				<tr onclick="playMix(3)">
+					<td>4</td>
+					<td>Bright Ancient Highlands</td> 
+					<td>Aeolus</td>
+					<td>2:06</td>
+				</tr>
+				<tr onclick="playMix(4)">
+					<td>5</td>
+					<td>Temporary Satellites</td> 
+					<td>Aeolus</td>
+					<td>2:34</td>
+				 </tr>
+				 <tr onclick="playMix(5)">
+					<td>6</td>
+					<td>The Wounded King</td> 
+					<td>Aeolus</td>
+					<td>2:28</td>
+				 </tr>
+				</table>
+			</div>
+			<div id="hide" onclick="hide()">
+				<button id="button_hide" type="button" title="Hide player"><span id="icon_hide" class="fa fa-caret-left"></span></button>
+			</div>
+	</div>
+	<script src="js/fonction.js"></script>
 </body>
 </html>
