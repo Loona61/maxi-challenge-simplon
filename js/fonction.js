@@ -27,10 +27,14 @@ function update() {
 	var time     = sound.currentTime; // Temps écoulé
 	var fraction = time / duration;
 	var percent  = fraction * 100;
-
+	
 	var progress = document.querySelector('#timeline');
-		
-	progress.style.background = '-webkit-linear-gradient(left,rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) ' + percent + '%, rgb(31,37,40) ' + percent + '%, rgb(31,37,40) 100%)';
+	var firefox = typeof InstallTrigger !== 'undefined';
+	if (firefox == true) {
+		progress.style.background = '-moz-linear-gradient(left,rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) ' + percent + '%, rgb(31,37,40) ' + percent + '%, rgb(31,37,40) 100%)';
+	} else {
+		progress.style.background = '-webkit-linear-gradient(left,rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) ' + percent + '%, rgb(31,37,40) ' + percent + '%, rgb(31,37,40) 100%)';
+	}
 	document.querySelector('#time').textContent = formatTime(sound.currentTime) + "/" + formatTime(sound.duration);	
 }
 
@@ -86,8 +90,10 @@ function hide() {
 		document.getElementById("player").style.width = "auto";
 		document.getElementById("icon_hide").className="fa fa-caret-right";
 		document.getElementById("player_album").style.width = "50px";
-		document.getElementById("player_album").style.zIndex = "-1";
+
 		document.getElementById("control").style.position = "absolute";
+		document.getElementById("control").style.top = "0px";
+		document.getElementById("control").style.left = "0px";
 		document.getElementById("list").style.display = "none";
 	}else{
 		document.getElementById("control").style.display = "flex";
@@ -272,9 +278,6 @@ var mix=[
 	}
 ]
 
-var sound = new Audio(mix[0].mp3);
-var id = 0;
-
 function reinit(){
 			sound.pause();
 			sound.currentTime = 0;
@@ -311,6 +314,9 @@ function prev(c){
 		sound.ontimeupdate = function() {update();}
 	}
 }
+
+var sound = new Audio(mix[0].mp3);
+var id = 0;
 
 slider.onchange = function() {
     sound.volume = this.value/100;
